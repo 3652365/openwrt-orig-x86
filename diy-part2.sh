@@ -12,7 +12,7 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.100.182/g' package/base-files/files/bin/config_generate
-#mkdir package/tt/
+mkdir package/tt/
 #git clone https://github.com/pymumu/luci-app-smartdns.git feeds/packages/net/luci-app-smartdns
 #git clone https://github.com/pymumu/openwrt-smartdns.git luci/applications/openwrt-smartdns
 #git clone https://github.com/xiaorouji/openwrt-passwall.git package/tt/openwrt-passwall
@@ -20,3 +20,5 @@ sed -i 's/192.168.1.1/192.168.100.182/g' package/base-files/files/bin/config_gen
 #git clone https://github.com/netdata/netdata.git package/tt/netdata
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/tt/luci-app-adguardhome
 #git clone https://github.com/AdguardTeam/AdGuardHome.git package/tt/AdGuardHome
+
+cp -r /tmp/luci-app-openclash/luci-app-openclash package/tt
